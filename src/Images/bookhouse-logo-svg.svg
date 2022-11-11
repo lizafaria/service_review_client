@@ -1,0 +1,30 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 277" width="814" height="277">
+	<title>bookhouse-logo-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h814v277h-814z"/>
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { opacity: .9;fill: #e16f6f } 
+		.s1 { opacity: .7;fill: #5876e1 } 
+		.t2 { font-size: 141px;fill: #ed803f;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t3 { font-size: 141px;fill: #639c63;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t4 { font-size: 56px;fill: #000000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m6 75h64v78h-64z"/>
+			<path id="Layer" class="s1" d="m35 93h64v78h-64z"/>
+			<text id="Bengliyan" style="transform: matrix(1,0,0,1,101,177)" >
+				<tspan x="0" y="0" class="t2">B</tspan><tspan  y="0" class="t2">e</tspan><tspan  y="0" class="t2">n</tspan><tspan  y="0" class="t3">g</tspan><tspan  y="0" class="t2">l</tspan><tspan  y="0" class="t2">i</tspan><tspan  y="0" class="t2">y</tspan><tspan  y="0" class="t2">a</tspan><tspan  y="0" class="t2">n
+</tspan>
+			</text>
+			<text id="For knowledge" style="transform: matrix(1,0,0,1,402,265)" >
+				<tspan x="0" y="0" class="t4">F</tspan><tspan  y="0" class="t4">o</tspan><tspan  y="0" class="t4">r</tspan><tspan  y="0" class="t4"> </tspan><tspan  y="0" class="t4">knowledge</tspan><tspan  y="0" class="t4">
+</tspan>
+			</text>
+		</g>
+	</g>
+</svg>

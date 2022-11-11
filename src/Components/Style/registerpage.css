@@ -1,0 +1,13 @@
+.register-container{
+    background-image: url(../../Images/4530762-ai.svg);
+    background-repeat: no-repeat;
+    background-position: center left ;
+    background-size: 80% 100%;
+    width: 100%;
+  
+    min-height: 90vh;
+    
+}
+/* .caracter-image{
+    transform: rotateY(180deg);
+} */
