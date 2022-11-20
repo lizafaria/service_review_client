@@ -10,14 +10,14 @@ const Home = () => {
   const [homebooks, gethomebooks] = useState([]);
   const navigate = useNavigate();
 
-//   useEffect(() => {
-//     console.log(homebooks.length);
-//     fetch("https://bengliyan-server-lizafaria.vercel.app/homebooks")
-//       .then((res) => res.json())
-//       .then((data) => {
-//         gethomebooks(data);
-//       });
-//   }, []);
+  useEffect(() => {
+    console.log(homebooks.length);
+    fetch("https://bengliyan-server-lizafaria.vercel.app/homebooks")
+      .then((res) => res.json())
+      .then((data) => {
+        gethomebooks(data);
+      });
+  }, []);
 
   const updatebtnHandle = (_id) => {
     navigate(`/inventory/${_id}`);
