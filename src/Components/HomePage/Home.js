@@ -30,7 +30,7 @@ const Home = () => {
       <div>
         <div className="pt-11 space-y-3 ">
           <h1 className="text-gray-900 font-roboto text-center text-4xl font-bold">
-            Inventory
+            Books Collection
           </h1>
           <p className="text-center text-gray-500">
             Reading helps you developing your communication skills
