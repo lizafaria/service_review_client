@@ -10,11 +10,11 @@ const Blogs = () => {
   }, []);
   return (
     <div>
-      {/* <div className="dark:bg-gray-800 dark:text-gray-100">
+      <div className="dark:bg-gray-800 dark:text-gray-100">
         {blogs.map((blog) => (
           <Blog key={blog._id} blog={blog}></Blog>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };
