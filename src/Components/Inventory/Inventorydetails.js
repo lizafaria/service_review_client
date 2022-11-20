@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import AddReviews from "../Reviews/AddReviews";
 import MyReviews from "../Reviews/MyReviews";
-import LoadingScreen from "../SharedPageSection/LoadingScreen";
 
 const Inventorydetails = () => {
   const { id } = useParams();
@@ -60,32 +59,7 @@ const Inventorydetails = () => {
     }
   };
   const inputquntity = useRef();
-  const restockHandle = () => {
-    let restackValue = parseInt(inputquntity.current.value);
-    let restackquantity;
-    if (quantity < 1) {
-      restackquantity = restackValue;
-    }
 
-    if (quantity > 0) {
-      restackquantity = parseInt(details.quantity) + restackValue;
-    }
-    const stingNewquantity = restackquantity + "";
-    const url = `https://bengliyan-server-lizafaria.vercel.app/delivered/${id}`;
-    fetch(url, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ quantity: stingNewquantity }),
-    })
-      .then((res) => res.json())
-      .then((data) => {});
-    setQuantity(restackquantity);
-    toast("Quantity added");
-
-    inputquntity.current.value = "";
-  };
   let quantities;
   if (quantity === "0") {
     quantities = "Out of stack";
@@ -144,10 +118,10 @@ const Inventorydetails = () => {
             </div>
           </div>
         </div>
-        <div className="bg-red-50 h-72 my-44">
+        <div className="bg-red-50 ">
           <div className="grid grid-cols-2">
             <div>
-              <AddReviews></AddReviews>
+              <AddReviews details={details}></AddReviews>
             </div>
             <div>
               <MyReviews></MyReviews>

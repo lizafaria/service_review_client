@@ -6,16 +6,15 @@ import Additem from "./Components/AddItemPage/Additem";
 import LoginPage from "./Components/AuthonticationPage/LoginPage";
 import Register from "./Components/AuthonticationPage/Register";
 import RequireAuth from "./Components/AuthonticationPage/RequireAuth";
-import Blogs from "./Components/BlogsPage/Blogs";
 import All from "./Components/HomePage/All";
 import Home from "./Components/HomePage/Home";
 import Inventorydetails from "./Components/Inventory/Inventorydetails";
-import ManagePage from "./Components/ManagePage.js/ManagePage";
-import Myitems from "./Components/MyitemsPage/Myitems";
+import MyReviewsAll from "./Components/MyReviewsPage/MyReviewsAll";
 import Footer from "./Components/SharedPageSection/Footer";
 import NavBarSection from "./Components/SharedPageSection/NavBarSection";
 import NotfoundPage from "./Components/SharedPageSection/NotfoundPage";
 import VerifyWarning from "./Components/SharedPageSection/VerifyWarning";
+import Blogs from "./Components/BlogsPage/Blogs";
 
 function App() {
   return (
@@ -33,7 +32,6 @@ function App() {
             </RequireAuth>
           }
         />
-        <Route path="/manage" element={<ManagePage />} />
         <Route
           path="/inventory/:id"
           element={
@@ -43,8 +41,16 @@ function App() {
           }
         />
 
-        <Route path="/myitems" element={<Myitems />} />
+        <Route
+          path="/myreviewsall"
+          element={
+            <RequireAuth>
+              <MyReviewsAll></MyReviewsAll>
+            </RequireAuth>
+          }
+        />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/register" element={<Register />} />
         <Route path="/verify" element={<VerifyWarning />} />
         <Route path="*" element={<NotfoundPage />} />
