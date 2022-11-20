@@ -16,4 +16,20 @@ bengliyan is warehouse of book store website . This website can updata product q
 * privete route (add item , manage, my item)page only avilable if sign in
 
 
+# Tecnology we use
+
+* Reactjs
+* react router v6
+* react icon
+* jwt
+* tailwind
+* swiperjs
+* css
+* firebase
+* react firebase hooks
+* nodejs
+* express
+* dotenv
+* mongodb
+* cors etc.
 
