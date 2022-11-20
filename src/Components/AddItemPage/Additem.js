@@ -22,7 +22,7 @@ const Additem = () => {
             discribtion: e.target.discribtion.value,
 
         }
-        axios.post('https://guarded-dusk-72997.herokuapp.com/add',item)
+        axios.post('https://bengliyan-server-lizafaria.vercel.app/add',item)
         .then(Response =>{
             const {data}= Response;
             if(data.insertedId){
