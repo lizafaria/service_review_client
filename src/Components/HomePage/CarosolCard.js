@@ -6,9 +6,9 @@ const CarosolCard = ({ image, styles, catagory, heading }) => {
       <div className="flex justify-center items-center ml-5 my-5 order-2 md:order-1 ">
         <div className="space-y-5 w-10/12">
           <div className="flex ">
-            {/* <p className="bg-gray-100 px-4 font-semibold text-gray-500 py-2 rounded text-md ">
+            <p className="bg-gray-100 px-4 font-semibold text-gray-500 py-2 rounded text-md ">
               {catagory}
-            </p> */}
+            </p>
           </div>
           <h1 className="text-3xl w-10/12 font-semibold text-gray-800 md:text-6xl">
             {heading}
